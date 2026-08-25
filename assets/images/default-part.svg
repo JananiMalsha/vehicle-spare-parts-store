@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <circle cx="200" cy="130" r="45" fill="#cbd5e1"/>
+  <path d="M175 130 L195 110 L225 140 L210 140 L225 155 L175 155 Z" fill="#94a3b8"/>
+  <text x="50%" y="220" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#64748b" font-weight="bold">Vehicle Spare Part</text>
+  <text x="50%" y="245" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">GearParts Auto Store</text>
+</svg>
