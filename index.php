@@ -108,13 +108,17 @@ try {
                     <p>No products found in the database. Please make sure you have imported <code>database/schema.sql</code>.</p>
                 </div>
             <?php else: ?>
-                <?php foreach ($featuredProducts as $part): ?>
+                <?php foreach ($featuredProducts as $part): 
+                    $imageSrc = (!empty($part['image']) && file_exists(__DIR__ . '/assets/uploads/' . $part['image']))
+                        ? 'assets/uploads/' . $part['image']
+                        : 'assets/images/default-part.svg';
+                ?>
                     <div class="product-card">
                         <div class="product-img-wrapper">
                             <span class="badge-compatibility">
                                 <?= sanitize($part['vehicle_make']); ?> <?= sanitize($part['vehicle_model']); ?> (<?= sanitize($part['year_compatibility']); ?>)
                             </span>
-                            <img src="assets/images/default-part.svg" alt="<?= sanitize($part['name']); ?>">
+                            <img src="<?= $imageSrc; ?>" alt="<?= sanitize($part['name']); ?>">
                         </div>
 
                         <div class="product-body">
